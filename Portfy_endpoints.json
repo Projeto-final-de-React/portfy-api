@@ -1,0 +1,546 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-08-31T19:28:06.827Z",
+  "__export_source": "insomnia.desktop.app:v2022.5.1",
+  "resources": [
+    {
+      "_id": "req_850243e94faa4199ae2d59dcb08c338c",
+      "parentId": "fld_ec8823ee891b48e59db0709ab0c3da2c",
+      "modified": 1661973275208,
+      "created": 1661886223606,
+      "url": "{{ _.local_url }}/users/2",
+      "name": "Update Profile",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"teste@teste.com\",\n\t\"password\": \"1234Teste!\",\n\t\"username\": \"TchescoSt\",\n\t\"name\": \"Francisco Correr\",\n\t\"cpf\": \"413.008.438-02\",\n\t\"address\": {\n\t\t\"street\": \"Rua Carolina Stenico\",\n\t\t\"number\": 174,\n\t\t\"postal-code\": \"13411-561\",\n\t\t\"locality\": \"Santa Olímpia\",\n\t\t\"county\": \"Piracicaba\",\n\t\t\"region_code\": \"São Paulo\",\n\t\t\"country\": \"Brasil\"\n\t}\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_d5d25a6635f7401ca514f0683c37f77e"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby50ZXN0ZUBnbWFpbC5jb20iLCJpYXQiOjE2NjE4ODYzNjYsImV4cCI6MTY2MTg4OTk2Niwic3ViIjoiMiJ9.Ybra8-mBGCSxbZjuir27e0CH7a_zZjWqAB_GonAwPIc"
+      },
+      "metaSortKey": -1661886223606,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ec8823ee891b48e59db0709ab0c3da2c",
+      "parentId": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "modified": 1661885427218,
+      "created": 1661885427218,
+      "name": "User",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1661885427218,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "parentId": null,
+      "modified": 1661880926484,
+      "created": 1661880926484,
+      "name": "Portfy",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_bb686d00526e4cdb9df3aad9aea38b6c",
+      "parentId": "fld_ec8823ee891b48e59db0709ab0c3da2c",
+      "modified": 1661973249994,
+      "created": 1661885804967,
+      "url": "http://localhost:3001/users/1",
+      "name": "User",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTg4ODI2NiwiZXhwIjoxNjYxODkxODY2LCJzdWIiOiIxIn0.v0CHFQsHCovUHetbDWASpZbfZPjqT4YXGDdsClBAtvk"
+      },
+      "metaSortKey": -1661885804967,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c3a2146b0be44302a35dec3fc9f5c6c7",
+      "parentId": "fld_ec8823ee891b48e59db0709ab0c3da2c",
+      "modified": 1661971270253,
+      "created": 1661883644758,
+      "url": "{{ _.local_url }}/users",
+      "name": "Users List",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MTI1MywiZXhwIjoxNjYxOTc0ODUzLCJzdWIiOiIxIn0.i34046bGtcNxjikgP049fx6PGFw4tdBrDZMd6uT73YE"
+      },
+      "metaSortKey": -1661883644758,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_23d4b85469a94716b1d8676e1472e6a8",
+      "parentId": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "modified": 1661973263913,
+      "created": 1661880930034,
+      "url": "http://localhost:3001/signup",
+      "name": "Register",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"cheetara@teste.com\",\n\t\"password\": \"123456\",\n\t\"username\": \"Cheetara\",\n\t\"name\": \"Cheetara Darkspear\",\n\t\"cpf\": \"000.111.222-33\",\n\t\"address\": {\n\t\t\"street\": \"Valey of Strength\",\n\t\t\"number\": 10,\n\t\t\"postal-code\": \"13520-677\",\n\t\t\"locality\": \"Orgrimmar\",\n\t\t\"county\": \"Durotar\",\n\t\t\"region_code\": \"Kalimdor\",\n\t\t\"country\": \"Azeroth\"\n\t},\n\t\"techs\": [],\n\t\"works\": []\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_3b155e1ee8644ba08a54a3fe963fdbcf"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1661880930034,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_52ae1e09e2a9427994010fa7d2f062e3",
+      "parentId": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "modified": 1661973258847,
+      "created": 1661885442884,
+      "url": "{{ _.local_url }}/signin",
+      "name": "Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"francisco.stenico@gmail.com\",\n  \"password\": \"1234Teste!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e0d8d42211d542b48e1b20822b23922a"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "" },
+      "metaSortKey": -1661880929984,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_608379717f424bea8e9919e25421dc5a",
+      "parentId": "fld_51b6f8c840a34014b271f77bb080d06c",
+      "modified": 1661972637992,
+      "created": 1661972569252,
+      "url": "{{ _.local_url }}/techs/3",
+      "name": "Single Tech",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MjMyOSwiZXhwIjoxNjYxOTc1OTI5LCJzdWIiOiIxIn0.q905sk2wvdP8aNtKmVvMqbHmgUcJiWmxKViArgOK03I"
+      },
+      "metaSortKey": -1661972569252,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_51b6f8c840a34014b271f77bb080d06c",
+      "parentId": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "modified": 1661887065176,
+      "created": 1661887053225,
+      "name": "Tech",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1661880929884,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_c832ad30739343d39dab1ce6b8b5cb10",
+      "parentId": "fld_51b6f8c840a34014b271f77bb080d06c",
+      "modified": 1661972649332,
+      "created": 1661970571306,
+      "url": "{{ _.local_url }}/techs",
+      "name": "Techs List",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MjMyOSwiZXhwIjoxNjYxOTc1OTI5LCJzdWIiOiIxIn0.q905sk2wvdP8aNtKmVvMqbHmgUcJiWmxKViArgOK03I"
+      },
+      "metaSortKey": -1661970571306,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d7429fcf4dea4929bd5060c6491a9b6b",
+      "parentId": "fld_51b6f8c840a34014b271f77bb080d06c",
+      "modified": 1661973256754,
+      "created": 1661887381786,
+      "url": "{{ _.local_url }}/techs",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Python\",\n\t\"status\": \"Intermediário\",\n\t\"userId\": 2\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6f2032a8cb884711a446704a8af2a022"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoZWV0YXJhQHRlc3RlLmNvbSIsImlhdCI6MTY2MTk3MTgxNywiZXhwIjoxNjYxOTc1NDE3LCJzdWIiOiIyIn0.yKZxYowKTiepRzIQUc9kTta5CobFlczYF2qws9SvW7M"
+      },
+      "metaSortKey": -1661887099145.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e45fe40b70b64124bbd4a4605c5f41fc",
+      "parentId": "fld_51b6f8c840a34014b271f77bb080d06c",
+      "modified": 1661973255715,
+      "created": 1661887352328,
+      "url": "{{ _.local_url }}/techs/4",
+      "name": "Update",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"React\",\n\t\"status\": \"Avançado\",\n\t\"userId\": 2\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_95706d4bf98a419eafd449de05e2acc8"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoZWV0YXJhQHRlc3RlLmNvbSIsImlhdCI6MTY2MTk3MTgxNywiZXhwIjoxNjYxOTc1NDE3LCJzdWIiOiIyIn0.yKZxYowKTiepRzIQUc9kTta5CobFlczYF2qws9SvW7M"
+      },
+      "metaSortKey": -1661887099120.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_573bb0fceaaa4444bb32753f3a176dbe",
+      "parentId": "fld_51b6f8c840a34014b271f77bb080d06c",
+      "modified": 1661971609112,
+      "created": 1661887369932,
+      "url": "{{ _.local_url }}/techs/2",
+      "name": "Delete",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MTI1MywiZXhwIjoxNjYxOTc0ODUzLCJzdWIiOiIxIn0.i34046bGtcNxjikgP049fx6PGFw4tdBrDZMd6uT73YE"
+      },
+      "metaSortKey": -1661887099020.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_dcdff5a860f44d9ea0214cdbe49a4e9f",
+      "parentId": "fld_78774b21b8d342a8a05a262c10314770",
+      "modified": 1661972688178,
+      "created": 1661972659328,
+      "url": "{{ _.local_url }}/projects/2",
+      "name": "Single Project",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MjMyOSwiZXhwIjoxNjYxOTc1OTI5LCJzdWIiOiIxIn0.q905sk2wvdP8aNtKmVvMqbHmgUcJiWmxKViArgOK03I"
+      },
+      "metaSortKey": -1661972659328,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_78774b21b8d342a8a05a262c10314770",
+      "parentId": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "modified": 1661887089135,
+      "created": 1661887087019,
+      "name": "Projects",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1661880929834,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_17b087ea5cd646508dbbd5c47440ce00",
+      "parentId": "fld_78774b21b8d342a8a05a262c10314770",
+      "modified": 1661972557663,
+      "created": 1661972529572,
+      "url": "{{ _.local_url }}/projects",
+      "name": "Projects List",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MjMyOSwiZXhwIjoxNjYxOTc1OTI5LCJzdWIiOiIxIn0.q905sk2wvdP8aNtKmVvMqbHmgUcJiWmxKViArgOK03I"
+      },
+      "metaSortKey": -1661972529572,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_641c5a7514204b9aa16b1ee84e18ffef",
+      "parentId": "fld_78774b21b8d342a8a05a262c10314770",
+      "modified": 1661973252656,
+      "created": 1661887333363,
+      "url": "{{ _.local_url }}/projects",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Portfy\",\n\t\"team_name\": \"Time 6\",\n\t\"role\": \"Tech Leader\",\n\t\"description\": \"KenzieHub é um projeto onde podemos adicionar nossas tecnologias aprendidas na Kenzie em um mini-portfolio\",\n\t\"deploy_url\": \"https://kenziehub-s314.vercel.app/login\",\n\t\"userId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6f2032a8cb884711a446704a8af2a022"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MjMyOSwiZXhwIjoxNjYxOTc1OTI5LCJzdWIiOiIxIn0.q905sk2wvdP8aNtKmVvMqbHmgUcJiWmxKViArgOK03I"
+      },
+      "metaSortKey": -1661887099170.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_20de8daa4bb34528ab4508abaa2c1f74",
+      "parentId": "fld_78774b21b8d342a8a05a262c10314770",
+      "modified": 1661973251975,
+      "created": 1661887388276,
+      "url": "{{ _.local_url }}/projects/1",
+      "name": "Update",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"KenzieHub\",\n\t\"team_name\": null,\n\t\"role\": null,\n\t\"description\": \"KenzieHub é um projeto onde podemos adicionar nossas tecnologias aprendidas na Kenzie em um mini-portfolio\",\n\t\"deploy_url\": \"https://kenziehub-s314.vercel.app/login\",\n\t\"userId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_473beb679ae942cb9ae3ba6a1e3a486f"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MjMyOSwiZXhwIjoxNjYxOTc1OTI5LCJzdWIiOiIxIn0.q905sk2wvdP8aNtKmVvMqbHmgUcJiWmxKViArgOK03I"
+      },
+      "metaSortKey": -1661887099120.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_abeb5f4e879f483a8fbbdaa1a0844804",
+      "parentId": "fld_78774b21b8d342a8a05a262c10314770",
+      "modified": 1661972938816,
+      "created": 1661887396454,
+      "url": "{{ _.local_url }}/projects/3",
+      "name": "Delete",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyYW5jaXNjby5zdGVuaWNvQGdtYWlsLmNvbSIsImlhdCI6MTY2MTk3MjMyOSwiZXhwIjoxNjYxOTc1OTI5LCJzdWIiOiIxIn0.q905sk2wvdP8aNtKmVvMqbHmgUcJiWmxKViArgOK03I"
+      },
+      "metaSortKey": -1661887099070.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_e81d86f411fac05900cb3e5617c0eb4dffc9cb94",
+      "parentId": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "modified": 1661970819340,
+      "created": 1661880926493,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": {},
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1661880926493,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_e81d86f411fac05900cb3e5617c0eb4dffc9cb94",
+      "parentId": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "modified": 1661880926496,
+      "created": 1661880926496,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_56e10cdfa4d243df926628b76572f2f9",
+      "parentId": "wrk_98f3f48a2cd542ba8de20a5f5ad3364f",
+      "modified": 1661880926488,
+      "created": 1661880926488,
+      "fileName": "Portfy",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_952caf66742246adb41bf44e843716d3",
+      "parentId": "env_e81d86f411fac05900cb3e5617c0eb4dffc9cb94",
+      "modified": 1661971062444,
+      "created": 1661970821881,
+      "name": "Potfy Environments",
+      "data": { "local_url": "http://localhost:3001" },
+      "dataPropertyOrder": { "&": ["local_url"] },
+      "color": "#00e2e6",
+      "isPrivate": false,
+      "metaSortKey": 1661970821881,
+      "_type": "environment"
+    }
+  ]
+}

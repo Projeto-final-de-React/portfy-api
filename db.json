@@ -1,11 +1,90 @@
 {
   "users": [
     {
-      "email": "kenzinho@mail.com",
-      "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
-      "name": "Kenzinho",
-      "age": 38,
+      "email": "francisco.stenico@gmail.com",
+      "password": "$2a$10$HDpIPNa6xK5x2qddY5fxpe47vub.f.PGqeubCLMZonopp.piAiiF.",
+      "username": "TchescoSt",
+      "name": "Francisco Correr",
+      "cpf": "413.008.438-02",
+      "address": {
+        "street": "Rua Carolina Stenico",
+        "number": 174,
+        "postal-code": "13411-561",
+        "locality": "Santa Olímpia",
+        "county": "Piracicaba",
+        "region_code": "São Paulo",
+        "country": "Brasil"
+      },
       "id": 1
+    },
+    {
+      "email": "cheetara@teste.com",
+      "password": "$2a$10$V7fV1j/E3iyGwJBMIHkJNunbk0QmU6B/zB..JqypK2YfVjbsXpdTC",
+      "username": "Cheetara",
+      "name": "Cheetara Darkspear",
+      "cpf": "000.111.222-33",
+      "address": {
+        "street": "Valey of Strength",
+        "number": 10,
+        "postal-code": "13520-677",
+        "locality": "Orgrimmar",
+        "county": "Durotar",
+        "region_code": "Kalimdor",
+        "country": "Azeroth"
+      },
+      "id": 2
+    }
+  ],
+  "techs": [
+    {
+      "name": "React",
+      "status": "Avançado",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "DOM",
+      "status": "iniciante",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "name": "React",
+      "status": "Avançado",
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "name": "Ruby",
+      "status": "iniciante",
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "name": "Python",
+      "status": "Intermediário",
+      "userId": 2,
+      "id": 6
+    }
+  ],
+  "projects": [
+    {
+      "name": "KenzieHub",
+      "team_name": null,
+      "role": null,
+      "description": "KenzieHub é um projeto onde podemos adicionar nossas tecnologias aprendidas na Kenzie em um mini-portfolio",
+      "deploy_url": "https://kenziehub-s314.vercel.app/login",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Portfy",
+      "team_name": "Time 6",
+      "role": "Tech Leader",
+      "description": "KenzieHub é um projeto onde podemos adicionar nossas tecnologias aprendidas na Kenzie em um mini-portfolio",
+      "deploy_url": "https://kenziehub-s314.vercel.app/login",
+      "userId": 1,
+      "id": 2
     }
   ]
 }
